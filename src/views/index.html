@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+
+    <!-- font gogle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* * {
+        border: 1px solid;
+      } */
+    </style>
+  </head>
+  <body class="">
+    <!-- navbar -->
+    <nav class="fixed left-0 right-0 top-0 z-10">
+      <div class="container bg-white pt-2 md:h-[60px] md:rounded-lg">
+        <div class="flex justify-between items-center">
+          <div class="flex flex-wrap gap-4 items-center">
+            <button class="order-2 md:order-1">
+              <img
+                src="../../public/image/frame1.png"
+                alt=""
+                class="min-w-32"
+              />
+            </button>
+            <button class="md:hidden">
+              <img
+                src="../../public/icon/menu-hamburger.svg"
+                alt=""
+                class="mt-1"
+              />
+            </button>
+          </div>
+          <div class="hidden md:block md:ms-2 lg:ms-0">
+            <ul class="flex space-x-3 p-2 lg:space-x-10">
+              <li
+                class="text-gray-700 text-md lg:text-lg font-[600] cursor-pointer hover:text-hijau"
+              >
+                Home
+              </li>
+              <li
+                class="text-gray-700 text-md lg:text-lg font-[600] cursor-pointer hover:text-hijau"
+              >
+                Courses
+              </li>
+              <li
+                class="text-gray-700 text-md lg:text-lg font-[600] cursor-pointer hover:text-hijau"
+              >
+                Instructor
+              </li>
+              <li
+                class="text-gray-700 text-md lg:text-lg font-[600] cursor-pointer hover:text-hijau"
+              >
+                Schedules
+              </li>
+              <li
+                class="text-gray-700 text-md lg:text-lg font-[600] cursor-pointer hover:text-hijau"
+              >
+                Contact Us
+              </li>
+            </ul>
+          </div>
+          <div class="items-center space-x-2 hidden md:block">
+            <button class="px-4 py-2 text-hijau font-semibold">Login</button>
+            <button
+              class="px-4 py-2 bg-hijau text-white font-semibold rounded-lg"
+            >
+              Register
+            </button>
+          </div>
+          <div class="mt-2 md:hidden">
+            <button>
+              <img src="../../public/icon/user.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <main class="min-h-screen container">
+      <!-- hero section -->
+      <section class="pt-2 ms-8 md:m-5">
+        <!-- bg in aside hero -->
+        <div
+          class="absolute container flex justify-end right-0 pe-4 z-0 left-0 sm:left-0 lg:top-14 2xl:top-[60px]"
+        >
+          <img
+            src="../../public/image/framehero.png"
+            alt=""
+            class="min-w-[120px] h-[1002px] lg:h-[480px] 2xl:h-[580px] lg:rounded-r-[60px]"
+          />
+        </div>
+
+        <div
+          class="mt-[130px] max-w-[250px] relative flex flex-col sm:mt-[100px] md:max-w-[950px] lg:grid lg:grid-cols-2 lg:items-center lg:mt-[40px] lg:max-w-[950px] 2xl:lg:max-w-[1450px] 2xl:ps-20 2xl:pe-20"
+        >
+          <!-- text hero -->
+          <div
+            class="w-full sm:min-w-[500px] md:max-w-[500px] lg:min-w-[640px] 2xl:min-w-[600px]"
+          >
+            <h1
+              class="font-poppins text-[30px] sm:text-[50px] lg:text-[50px] 2xl:text-[60px] font-black"
+            >
+              Quality <span class="text-hijau">Education</span> By Any Means
+              Necessary.
+            </h1>
+            <button
+              class="px-8 py-2 mt-12 bg-hijau rounded-lg text-white font-semibold hover:bg-green-700 md:text-lg lg:text-2xl"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- gambar hero -->
+          <div
+            class="m-12 w-full sm:min-w-[500px] md:max-w-[600px] lg:pe-10 2xl:min-w-[700px]"
+          >
+            <img
+              src="../../public/image/heroContent.png"
+              alt=""
+              class="aspect-auto"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- end hero section -->
+
+      <!-- feature website -->
+      <section
+        class="relative grid grid-cols-2 gap-y-8 gap-x-5 min-w-[300px] sm:min-w-[550px] lg:inline-flex lg:mt-10 lg:min-w-[940px] lg:gap-x-[40px] 2xl:min-w-[89rem]"
+      >
+        <li
+          class="flex h-16 ps-4 w-full rounded-md items-center space-x-3 bg-blue-mentah"
+        >
+          <div class="bg-hijau rounded-full w-12">
+            <img
+              src="../../public/icon/problem.svg"
+              alt=""
+              class="w-full h-full p-2"
+            />
+          </div>
+          <div>
+            <p class="font-poppins font-medium lg:text-md lg:font-normal">
+              Problem Solving
+            </p>
+          </div>
+        </li>
+
+        <li
+          class="flex h-16 ps-4 w-full rounded-md items-center space-x-3 bg-blue-mentah"
+        >
+          <div class="bg-hijau rounded-full w-12">
+            <img
+              src="../../public/icon/chat.svg"
+              alt=""
+              class="w-full h-full p-2"
+            />
+          </div>
+          <div>
+            <p class="font-poppins font-medium lg:text-md lg:font-normal">
+              Live chat
+            </p>
+          </div>
+        </li>
+
+        <li
+          class="flex h-16 ps-4 w-full rounded-md items-center space-x-3 bg-blue-mentah"
+        >
+          <div class="bg-hijau rounded-full w-12">
+            <img
+              src="../../public/icon/user-group.svg"
+              alt=""
+              class="w-full h-full p-2"
+            />
+          </div>
+          <div>
+            <p class="font-poppins font-medium lg:text-md lg:font-normal">
+              Group Reading
+            </p>
+          </div>
+        </li>
+
+        <li
+          class="flex h-16 ps-4 w-full rounded-md items-center space-x-3 bg-blue-mentah"
+        >
+          <div class="bg-hijau rounded-full w-12">
+            <img
+              src="../../public/icon/book.svg"
+              alt=""
+              class="w-full h-full p-2"
+            />
+          </div>
+          <div>
+            <p class="font-poppins font-medium lg:text-md lg:font-normal">
+              10K Courses
+            </p>
+          </div>
+        </li>
+
+        <li
+          class="flex ms-32 w-full h-16 ps-4 rounded-md items-center space-x-3 bg-blue-mentah lg:ms-0"
+        >
+          <div class="bg-hijau rounded-full w-12">
+            <img
+              src="../../public/icon/hand-on.svg"
+              alt=""
+              class="w-full h-full p-2"
+            />
+          </div>
+          <div>
+            <p class="font-poppins font-medium lg:text-md lg:font-normal">
+              Group Reading
+            </p>
+          </div>
+        </li>
+      </section>
+      <!-- end feature website  -->
+
+      <!-- section kategori -->
+      <section class="pt-32 md:pt-20">
+        <!-- choose favourite -->
+        <div class="flex justify-between">
+          <h1
+            class="max-w-[250px] text-[16px] font-poppins font-semibold md:max-w-[800px] md:text-lg 2xl:text-2xl"
+          >
+            Choose Favourite Course From Top Categories
+          </h1>
+          <p
+            class="font-poppins text-[14px] hover:text-hijau cursor-pointer h-0 md:text-lg 2xl:text-2xl"
+          >
+            See All
+          </p>
+        </div>
+
+        <!-- card kategori -->
+        <div
+          class="pt-5 grid grid-cols-3 gap-x-32 sm:grid-cols-4 sm:gap-44 md:gap-5 md:grid-cols-3 md:pt-10 lg:grid-cols-4"
+        >
+          <div class="">
+            <p
+              class="absolute pt-[60px] ps-10 text-white font-semibold font-poppins sm:pt-20 sm:ps-[45px] md:text-lg md:pt-[84px] md:ps-[60px] lg:text-[23px] lg:pt-[210px] lg:ps-[50px] 2xl:ps-[90px] 2xl:pt-[210px]"
+            >
+              Marketing
+            </p>
+            <img
+              src="../../public/image/marketing.jpg"
+              alt=""
+              class="max-w-[150px] h-[150px] sm:max-w-[180px] sm:h-[200px] rounded-lg md:max-w-full lg:min-h-[250px]"
+            />
+          </div>
+          <div class="">
+            <p
+              class="absolute pt-[60px] ps-8 text-white font-semibold font-poppins sm:pt-20 sm:ps-[45px] md:text-lg md:pt-[84px] md:ps-[60px] lg:text-[23px] lg:pt-[210px] lg:ps-[50px] 2xl:ps-[90px] 2xl:pt-[210px]"
+            >
+              Technology
+            </p>
+            <img
+              src="../../public/image/technology.jpg"
+              alt=""
+              class="max-w-[150px] h-[150px] sm:max-w-[180px] sm:h-[200px] rounded-lg md:max-w-full lg:min-h-[250px]"
+            />
+          </div>
+          <div class="overflow-hidden sm:overflow-visible">
+            <p
+              class="absolute pt-[60px] ps-[20px] text-white font-semibold font-poppins sm:pt-20 sm:ps-[45px] md:text-lg md:pt-[84px] md:ps-[60px] lg:text-[23px] lg:pt-[210px] lg:ps-[50px] 2xl:ps-[90px] 2xl:pt-[210px]"
+            >
+              Progamming
+            </p>
+            <img
+              src="../../public/image/progamming.jpg"
+              alt=""
+              class="max-w-[150px] h-[150px] sm:max-w-[180px] sm:h-[200px] rounded-lg md:max-w-full lg:min-h-[250px]"
+            />
+          </div>
+          <div
+            class="hidden sm:block md:col-start-2 lg:col-start-4"
+          >
+            <p
+              class="absolute pt-[60px] ps-[5px] text-white font-semibold font-poppins sm:pt-20 sm:ps-[45px] md:text-lg md:pt-[84px] md:ps-[60px] lg:text-[23px] lg:pt-[210px] lg:ps-[50px] 2xl:ps-[90px] hidden sm:block"
+            >
+              Photography
+            </p>
+            <img
+              src="../../public/image/photograpy.jpg"
+              alt=""
+              class="max-w-[150px] h-[150px] sm:max-w-[180px] sm:h-[200px] rounded-lg md:max-w-full lg:min-h-[250px]"
+            />
+          </div>
+          <!-- panah between image -->
+          <div
+            class="hidden col-span-4 relative -mt-40 lg:flex lg:justify-between"
+          >
+            <div
+              class="bg-white h-[40px] w-[40px] pt-2 ps-2 rounded-full lg:ms-4 2xl:ms-6 cursor-pointer"
+            >
+              <img
+                src="../../public/icon/round-less-than-left.svg"
+                alt=""
+                class="w-6"
+              />
+            </div>
+            <div
+              class="bg-white h-[40px] w-[40px] pt-2 ps-2 rounded-full lg:me-5 2xl:me-8 cursor-pointer"
+            >
+              <img
+                src="../../public/icon/round-less-than-right.svg"
+                alt=""
+                class="w-6"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section kategori -->
+
+      <!-- popular courses -->
+      <section class="pt-12 pb-96">
+        <div class="flex justify-between">
+          <div>
+            <h1 class="font-semibold text-lg md:text-2xl lg:text-3xl">
+              Most Popular courses
+            </h1>
+          </div>
+
+          <div
+            class="bg-hijau w-[100px] h-8 ps-2 gap-1 flex items-center rounded-2xl hover:bg-green-800 cursor-pointer lg:w-[140px] lg:justify-center lg:ps-0 lg:gap-3"
+          >
+            <img
+              src="../../public/icon/ic_round-less-than.svg"
+              alt=""
+              class="w-6"
+            />
+            <p class="text-white pb-[3px]">Sort by</p>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-2 gap-4 pt-8 lg:grid-cols-3 2xl:grid-cols-4 2xl:gap-6"
+        >
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/frame-marketing.png"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/front-end.png"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/ux.png"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/learn-photography.png"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/data-analyst.png"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/hacker.png"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/perkantoran.jpg"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Learn Marketing from Top Instructors.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+
+          <div class="shadow-lg pb-7 rounded-lg">
+            <img
+              src="../../public/image/truck-oleng.webp"
+              alt=""
+              class="rounded-lg aspect-video"
+            />
+            <div class="ps-3 pt-2 flex justify-between">
+              <p class="text-xs md:text-lg font-poppins font-semibold">
+                Komunitas Truck Oleng Indonesia.
+              </p>
+              <p class="text-slate-800 me-4 font-poppins text-xs flex">
+                <span>⭐</span> 4.5
+              </p>
+            </div>
+            <p
+              class="ps-3 pt-2 text-hijau font-poppins font-semibold text-xs md:text-lg"
+            >
+              30.5$
+            </p>
+            <div class="ps-3 pt-3 flex gap-x-2 items-center">
+              <p class="font-poppins text-sm">6 weeks</p>
+              <img
+                src="../../public/icon/ci_group.svg"
+                alt=""
+                class="pt-1 w-6"
+              />
+              <p class="font-poppins text-sm">1.5k Students</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end popular courses -->
+    </main>
+  </body>
+</html>
