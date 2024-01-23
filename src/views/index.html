@@ -25,13 +25,13 @@
       <div class="container bg-white pt-2 md:h-[60px] md:rounded-lg">
         <div class="flex justify-between items-center">
           <div class="flex flex-wrap gap-4 items-center">
-            <button class="order-2 md:order-1">
+            <a href="/src/views/index.html" class="order-2 md:order-1">
               <img
                 src="../../public/image/frame1.png"
                 alt=""
                 class="min-w-32"
               />
-            </button>
+            </a>
             <button class="md:hidden">
               <img
                 src="../../public/icon/menu-hamburger.svg"
@@ -87,7 +87,11 @@
     </nav>
     <!-- end navbar -->
 
-    <main class="min-h-screen container">
+    <div id="loader" class="flex justify-center items-center h-[100vh] " >
+      <span class="loading loading-infinity text-hijau w-[150px]"></span>
+    </div>
+
+    <main id="main-content" class="min-h-screen container" style="display: none;">
       <!-- hero section -->
       <section class="pt-2 ms-8 md:m-5">
         <!-- bg in aside hero -->
@@ -100,7 +104,6 @@
             class="min-w-[120px] h-[1002px] lg:h-[480px] 2xl:h-[580px] lg:rounded-r-[60px]"
           />
         </div>
-
         <div
           class="mt-[130px] max-w-[250px] relative flex flex-col sm:mt-[100px] md:max-w-[950px] lg:grid lg:grid-cols-2 lg:items-center lg:mt-[40px] lg:max-w-[950px] 2xl:lg:max-w-[1450px] 2xl:ps-20 2xl:pe-20"
         >
@@ -282,9 +285,7 @@
               class="max-w-[150px] h-[150px] sm:max-w-[180px] sm:h-[200px] rounded-lg md:max-w-full lg:min-h-[250px]"
             />
           </div>
-          <div
-            class="hidden sm:block md:col-start-2 lg:col-start-4"
-          >
+          <div class="hidden sm:block md:col-start-2 lg:col-start-4">
             <p
               class="absolute pt-[60px] ps-[5px] text-white font-semibold font-poppins sm:pt-20 sm:ps-[45px] md:text-lg md:pt-[84px] md:ps-[60px] lg:text-[23px] lg:pt-[210px] lg:ps-[50px] 2xl:ps-[90px] hidden sm:block"
             >
@@ -589,6 +590,8 @@
         </div>
       </section>
       <!-- end popular courses -->
+
+      <script src="../../public/script.js"></script>
     </main>
   </body>
 </html>
