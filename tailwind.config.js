@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '12px',
+      padding: '20px',
     },
     screens: {
       'sm': '640px',
@@ -28,6 +28,7 @@ module.exports = {
       },
       colors: {
         'hijau': '#09B451',
+        'hijau-mentah': '#DDFFFF',
         'blue-mentah': '#E4FFFF',
       },
     },
